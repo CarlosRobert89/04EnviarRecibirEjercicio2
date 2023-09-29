@@ -1,18 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/lbCantidadCochesMain"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Coches: 0"
+        android:textColor="#673AB7"
+        android:textSize="34sp"
+        android:textStyle="bold" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/btnCrearCocheMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CREAR COCHE"
+        android:textSize="20dp"
+        app:cornerRadius="0dp"
+        app:icon="@android:drawable/ic_input_add" />
+
+    <TextView
+        android:id="@+id/lbCantidadMotosMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Motos: 0"
+        android:textColor="#673AB7"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnCrearMotoMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CREAR MOTO"
+        android:textSize="20dp"
+        app:cornerRadius="0dp"
+        app:icon="@android:drawable/ic_input_add" />
+
+    <TextView
+        android:id="@+id/lbCantidadBicisMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Bicis: 0"
+        android:textColor="#673AB7"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnCrearBiciMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CREAR BICI"
+        android:textSize="20dp"
+        app:cornerRadius="0dp"
+        app:icon="@android:drawable/ic_input_add" />
+</LinearLayout>
